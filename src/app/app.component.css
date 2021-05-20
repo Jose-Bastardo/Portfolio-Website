@@ -1,0 +1,29 @@
+app-header{
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+app-main {
+  position: absolute;
+  align: center;
+  height: auto;
+  bottom: 0;
+  top: 170px;
+}
+
+@media screen and (max-width: 1199px) {
+  app-main {
+    top: 150px;
+  }
+  app-header{
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) {
+ app-main {
+   top: 300px;
+ }
+}
