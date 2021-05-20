@@ -1,0 +1,64 @@
+#header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-family: "HKGrotesk-Medium", sans-serif;
+}
+
+.space {
+  width: 40%;
+}
+
+.col-md-1, .col-md-2 {
+  padding: 15px 0px;
+  min-width: 200px;
+  margin: 0;
+}
+
+#link {
+  padding: 10px 15px;
+  border: 3px solid #595959;
+}
+
+#link:hover {
+  animation-name: btnhover;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+#link:not(#link:hover){
+  animation-name: btnnothover;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes btnhover {
+  from {background-color: none;}
+  to {background-color: #595959;}
+  from {color: white;}
+  to {color: black;}
+}
+
+@keyframes btnnothover {
+  from {background-color: #595959;}
+  to {background-color: none;}
+  from {color: black;}
+  to {color: white;}
+}
+
+@media screen and (max-width: 1400px){
+  .space {
+    width: 25%;
+  }
+  .col-md-1, .col-md-2 {
+    min-width: 140px;
+  }
+}

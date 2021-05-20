@@ -1,0 +1,57 @@
+#profileimg {
+  width: auto;
+  height: 40em;
+  margin: 0;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0) 620px);
+}
+
+p {
+  color: white;
+  font-family: "Raleway-Thin", sans-serif;
+  font-size: 1.5em;
+}
+
+h1 {
+  color: white;
+  font-family: "HKGrotesk-Light", sans-serif;
+  font-size: 7em;
+}
+
+#namecol {
+  height: 520px;
+}
+
+#arrow {
+  position: relative;
+  transform: rotate(90deg);
+  width: auto;
+  margin-top: 80px;
+  height: 5em;
+  animation-name: arrow-anim;
+  animation-duration: .45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes arrow-anim {
+  from {margin-top: 80px;}
+  to {margin-top: 70px;}
+}
+
+@media screen and (max-width: 1199px) {
+  #profileimg {
+    width: auto;
+    height: 20em;
+  }
+  p {
+    margin-top: 70px;
+    font-size: 1.3em;
+  }
+
+  h1 {
+    padding-top:1px;
+    font-size: 6em;
+  }
+}
