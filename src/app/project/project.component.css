@@ -1,0 +1,37 @@
+.col-sm-1 a{
+  color: white;
+  font-size: 4em;
+  text-decoration-line: none;
+  border: 1px solid white;
+  padding: 0 25px 10px 25px;
+  border-radius: 50px;
+}
+
+.col-sm-1 a:hover {
+  animation-name: btnhover;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.col-sm-1 a:not(.col-sm-1 a:hover){
+  animation-name: btnnothover;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes btnhover {
+  from {background-color: none;}
+  to {background-color: #595959;}
+  from {color: white;}
+  to {color: black;}
+}
+
+@keyframes btnnothover {
+  from {background-color: #595959;}
+  to {background-color: none;}
+  from {color: black;}
+  to {color: white;}
+}

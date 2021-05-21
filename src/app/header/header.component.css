@@ -3,6 +3,10 @@
   padding-bottom: 30px;
 }
 
+.container {
+  min-width: 80%;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -11,13 +15,11 @@ a {
 }
 
 .space {
-  width: 40%;
+  width: 45%;
 }
 
-.col-md-1, .col-md-2 {
+.p-2 {
   padding: 15px 0px;
-  min-width: 200px;
-  margin: 0;
 }
 
 #link {
@@ -40,6 +42,7 @@ a {
   animation-direction: alternate;
   animation-fill-mode: both;
 }
+
 @keyframes btnhover {
   from {background-color: none;}
   to {background-color: #595959;}
@@ -56,9 +59,9 @@ a {
 
 @media screen and (max-width: 1400px){
   .space {
-    width: 25%;
+    width: 5%;
   }
-  .col-md-1, .col-md-2 {
+  .p-2 {
     min-width: 140px;
   }
 }

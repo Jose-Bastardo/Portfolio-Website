@@ -1,29 +1,38 @@
-app-header{
+header{
   width: 100%;
   top: 0;
   position: fixed;
   z-index: 10;
 }
 
-app-main {
-  position: absolute;
-  align: center;
-  height: auto;
-  bottom: 0;
-  top: 170px;
+.row > * {
+  position: relative;
+}
+
+.row {
+  scroll-snap-align: center;
 }
 
 @media screen and (max-width: 1199px) {
   app-main {
     top: 150px;
   }
-  app-header{
-    position: relative;
+
+  header{
+    position: absolute;
   }
 }
 
-@media screen and (max-width: 767px) {
- app-main {
-   top: 300px;
+@media screen and (max-width: 991px) {
+ .row  > * {
+   top: 250px;
+ }
+
+ h2{
+   font-size: 1em;
+ }
+
+ header{
+   position: absolute;
  }
 }

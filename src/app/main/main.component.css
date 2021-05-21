@@ -6,6 +6,44 @@
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0) 620px);
 }
 
+.mainlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 80px;
+  width: 60%;
+}
+
+a {
+  background-color: white;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px 1px rgba(255, 255, 255, .2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+  color: black;
+  font-size: 4em;
+  transition: background-color 250ms, color 350ms, transform 250ms;
+}
+
+#linkedin:hover {
+  background-color: #0077B5;
+  color: white;
+  transform: translateY(-10px);
+}
+
+#github:hover {
+  background-color: #7C007C;
+  color: white;
+  transform: translateY(-10px);
+}
+
+#linkedin:active {
+  transform: translateY(-5px);
+}
+
+#github:active {
+  transform: translateY(-5px);
+}
+
 p {
   color: white;
   font-family: "Raleway-Thin", sans-serif;
@@ -22,28 +60,10 @@ h1 {
   height: 520px;
 }
 
-#arrow {
-  position: relative;
-  transform: rotate(90deg);
-  width: auto;
-  margin-top: 80px;
-  height: 5em;
-  animation-name: arrow-anim;
-  animation-duration: .45s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes arrow-anim {
-  from {margin-top: 80px;}
-  to {margin-top: 70px;}
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   #profileimg {
     width: auto;
-    height: 20em;
+    height: 15em;
   }
   p {
     margin-top: 70px;
@@ -51,11 +71,15 @@ h1 {
   }
 
   h1 {
-    padding-top:1px;
-    font-size: 4em;
+    padding-top:30px;
+    font-size: 3em;
   }
 
-  #arrow {
-    height: 4em;
+  a{
+    font-size: 2em;
+  }
+
+  .mainlinks{
+    margin-top: 50px;
   }
 }
