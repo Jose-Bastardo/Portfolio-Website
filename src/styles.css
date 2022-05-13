@@ -35,7 +35,7 @@ body {
 
 #sectionrow {
   width: 100%;
-  padding-top: 160px;
+  padding-top: 80px;
   height: 100vh;
 }
 
@@ -43,7 +43,7 @@ body {
   display: flex;
   position: absolute;
   top: 0;
-  height: 270px;
+  height: 220px;
   width: 70%;
   align-items: flex-end;
   margin: 0 auto;
