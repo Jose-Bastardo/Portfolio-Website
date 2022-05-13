@@ -9,6 +9,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MainComponent,
     AboutmeComponent,
     SkillsComponent,
-    ContactmeComponent
+    ContactmeComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
