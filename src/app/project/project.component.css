@@ -1,37 +1,33 @@
-.col-sm-1 a{
-  color: white;
-  font-size: 4em;
-  text-decoration-line: none;
-  border: 1px solid white;
-  padding: 0 25px 10px 25px;
-  border-radius: 50px;
+img {
+  width: 100%;
 }
 
-.col-sm-1 a:hover {
-  animation-name: btnhover;
+img:hover {
+  animation-name: imghover;
   animation-duration: .3s;
   animation-timing-function: ease;
   animation-direction: alternate;
   animation-fill-mode: both;
 }
 
-.col-sm-1 a:not(.col-sm-1 a:hover){
-  animation-name: btnnothover;
+img:not(img:hover){
+  animation-name: imgnothover;
   animation-duration: .3s;
   animation-timing-function: ease;
   animation-direction: alternate;
   animation-fill-mode: both;
 }
-@keyframes btnhover {
-  from {background-color: none;}
-  to {background-color: #595959;}
-  from {color: white;}
-  to {color: black;}
+
+@keyframes imghover {
+  from {transform: translateY(0px);}
+  to {transform: translateY(-5px);}
+  from {box-shadow: 0;}
+  to {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 }
 
-@keyframes btnnothover {
-  from {background-color: #595959;}
-  to {background-color: none;}
-  from {color: black;}
-  to {color: white;}
+@keyframes imgnothover {
+  from {transform: translateY(-5px);}
+  to {transform: translateY(0px);}
+  from {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+  to {box-shadow: 0;}
 }

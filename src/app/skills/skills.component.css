@@ -2,4 +2,35 @@ li {
     color: white;
     font-size: 2em;
     padding: 12px 0 12px 0;
+    cursor: default;
 }
+
+li:hover {
+    animation-name: lihover;
+    animation-duration: .3s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+  
+  li:not(li:hover){
+    animation-name: linothover;
+    animation-duration: .3s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes lihover {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-5px);}
+    from {text-shadow: 0 0 black;}
+    to {text-shadow: 4px 6px black;}
+  }
+  
+  @keyframes linothover {
+    from {transform: translateY(-5px);}
+    to {transform: translateY(0px);}
+    from {text-shadow:4px 6px black;}
+    to {text-shadow: 0 0 black;}
+  }
